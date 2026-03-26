@@ -3,13 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfólio - Wallace</title>
+  <title>Portfólio Wallace</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <!-- Cabeçalho -->
   <header>
-    <h1>Wallace</h1>
+    <h1 class="logo">Wallace</h1>
     <nav>
       <ul>
         <li><a href="#sobre">Sobre</a></li>
@@ -19,37 +19,52 @@
     </nav>
   </header>
 
+  <!-- Seção Hero -->
+  <section class="hero">
+    <h2>Bem-vindo ao meu Portfólio</h2>
+    <p>Explore meus projetos com vídeos e imagens interativos.</p>
+    <a href="#projetos" class="btn">Ver Projetos</a>
+  </section>
+
   <!-- Seção Sobre -->
-  <section id="sobre">
+  <section id="sobre" class="fade-in">
     <h2>Sobre mim</h2>
-    <p>Sou desenvolvedor apaixonado por tecnologia e criatividade. Aqui você encontra meus projetos e ideias.</p>
-    <img src="minha-foto.png" alt="Foto de Wallace">
+    <p>Sou desenvolvedor apaixonado por tecnologia e criatividade. Aqui você encontra meus projetos com demonstrações reais.</p>
   </section>
 
   <!-- Seção Projetos -->
-  <section id="projetos">
-    <h2>Projetos</h2>
+  <section id="projetos" class="fade-in">
+    <h2>Meus Projetos</h2>
     <div class="grid">
+      <!-- Projeto Torre de Hanoi -->
       <div class="card">
-        <img src="gif-projeto1.gif" alt="Projeto 1">
-        <h3>Projeto 1</h3>
-        <p>Descrição breve do projeto.</p>
+        <h3>Torre de Hanoi</h3>
+        <img src="Imagens/TorreHanoi/exemplo.png" alt="Imagem Torre de Hanoi">
+        <video controls>
+          <source src="Imagens/TorreHanoi/demo.mp4" type="video/mp4">
+        </video>
+        <p>Um jogo clássico implementado com lógica e animações.</p>
       </div>
+
+      <!-- Projeto Lovable Viagem -->
       <div class="card">
-        <img src="gif-projeto2.gif" alt="Projeto 2">
-        <h3>Projeto 2</h3>
-        <p>Descrição breve do projeto.</p>
+        <h3>Lovable Viagem</h3>
+        <img src="Imagens/LovableViagem/exemplo.png" alt="Imagem Lovable Viagem">
+        <video controls>
+          <source src="Imagens/LovableViagem/demo.mp4" type="video/mp4">
+        </video>
+        <p>Aplicativo para planejar viagens de forma divertida e interativa.</p>
       </div>
     </div>
   </section>
 
   <!-- Seção Contato -->
-  <section id="contato">
+  <section id="contato" class="fade-in">
     <h2>Contato</h2>
     <p>Entre em contato comigo pelas redes sociais ou email.</p>
     <ul>
-      <li><a href="https://github.com/Wallacekenchi">GitHub</a></li>
-      <li><a href="mailto:seuemail@gmail.com">Email</a></li>
+      <li><a href="https://github.com/Wallacekenchi" class="btn">GitHub</a></li>
+      <li><a href="mailto:seuemail@gmail.com" class="btn">Email</a></li>
     </ul>
   </section>
 
@@ -57,5 +72,7 @@
   <footer>
     <p>© 2026 Wallace - Todos os direitos reservados</p>
   </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
